@@ -37,5 +37,9 @@
 
 
 // Package.json
-console.log("Package.json");
-console.log("hello");
+// console.log("Package.json");
+// console.log("hello");
+
+// colors package
+var colors = require('colors');
+console.log("hello".red);
