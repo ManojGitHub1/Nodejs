@@ -18,6 +18,7 @@
 // const fs = require('fs');
 // console.log("hi")
 // fs.writeFileSync("Hello.txt", "Manoj love's coding!")
+// fs.copyFileSync("file1.txt", "file2.txt");  // copys the content of file1 to file2
 // console.log("-->",__dirname);
 
 
@@ -30,7 +31,7 @@
 // let http = require('http');
 // creates server which gets request & response
 // http.createServer((req, res) => {
-//     res.write("<h1>Hello World!</h1>");
+//     res.write("<h1>Hello World!</h1><br><p>My name is Khan!</p>");
 //     res.end();
 // }).listen(4500)
 // .listen listens in localhost:4500
@@ -41,7 +42,18 @@
 // console.log("hello");
 
 // colors package
-var colors = require('colors');
-console.log("hello".red);
-console.log("This Nodemon is Wonderfull!")
-console.log(100+123)
+// var colors = require('colors');
+// console.log("hello".red);
+
+// Node-mon
+// console.log("This Nodemon is Wonderfull!")
+
+const http = require('http');
+const data = require('./data')
+http.createServer((req, res)=>{
+res.writeHead(200,{'Content-Type':'application\json'});
+res.write(JSON.stringify(data));
+res.end();
+}).listen(5000);
+
+
