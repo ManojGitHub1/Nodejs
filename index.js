@@ -43,3 +43,5 @@
 // colors package
 var colors = require('colors');
 console.log("hello".red);
+console.log("This Nodemon is Wonderfull!")
+console.log(100+123)
