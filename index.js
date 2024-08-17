@@ -55,5 +55,32 @@ res.writeHead(200,{'Content-Type':'application\json'});
 res.write(JSON.stringify(data));
 res.end();
 }).listen(5000);
+// console.log(data)
+
+// Getting input from command line
+// console.log(process)
+// console.log(process.argv[2])
+
+
+
+
+// const fs = require('fs')
+
+// const input = process.argv;
+// 1-argument file name, 2-argument content in file as input is array
+// fs.writeFileSync(input[2], input[3])
+// if(input[2]=='add'){
+//     fs.writeFileSync(input[3], input[4])
+// }else if(input[2]=='remove'){
+//     fs.unlinkSync(input[3]);
+// }else{
+//     console.log("Invalid input");
+// }
+// node ./index.js apple.txt "This is a file created by fs,\n apple is fruit"
+// node ./index.js add orange.txt "This is color & fruit"                         
+// node ./index.js remove add   
+
+
+
 
 
