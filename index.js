@@ -72,7 +72,7 @@
 // Getting input from command line
 // console.log(process)
 // node ./index.js hello , so hello is argv[2] now
-console.log(process.argv[2])
+// console.log(process.argv[2])
 
 
 
