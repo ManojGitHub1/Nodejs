@@ -23,6 +23,8 @@
 // console.log("-->",__dirname);
 
 
+
+
 // Node.js Create Server
 // const dataControl = (req, res) => {
 //     res.write("<h1>Hello World!</h1>");
@@ -53,6 +55,7 @@
 
 
 
+
 // data.js
 // const http = require('http');
 // const data = require('./data')
@@ -66,13 +69,10 @@
 
 
 
-
-
 // Getting input from command line
 // console.log(process)
 // node ./index.js hello , so hello is argv[2] now
-// console.log(process.argv[2])
-
+console.log(process.argv[2])
 
 
 
