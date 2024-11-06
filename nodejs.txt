@@ -1,0 +1,94 @@
+1. Node is not a Language.
+2. This is a Server Environment.
+3. Node js can connect with database, JS cannot.
+4. Node js is a server side language, JS is a client side language(run on browser).
+4,1. Code and syntax is very similar to JavaScript. But not exactly the same.
+5. Node js free,open-source.
+6. Node js use Chrome V8 Engine to execute code.
+
+7. Node js mostly used for API (90% of usecase)
+8. So we can connect the same database with Web App, Mobile App.
+9. Node is easy to understand who know Javascript.
+10. Node is super-fast for APIs
+11. With Node and JavaScript, you can become full Stack Developer.
+
+
+
+Clint(Request) - Server(Response)
+html,css,js - nodejs
+
+
+
+NPM - node package manager
+to download different external packages through node.
+comes with node js installation.
+node -v,  npm -v to check version in terminal
+
+
+
+console library in node is used for debugging
+it is not same as browser console.
+
+
+
+Core Module
+- file system(fs)
+- http
+- path
+- process
+- url
+- buffer
+- crypto
+- dns
+- events
+- console
+2 types - Global & Non-Global core modules
+console is a global cmodl
+fs is non-global cmodl
+non-global modules need to be imported global need not.
+
+
+
+Create Server
+using http module to create server
+
+
+
+package.json (never delete this file)
+keep code related details of project
+name, version, description, author, license, dependencies, scripts, main, keywords, repository,
+keywords - keywords for project
+repository - repository url of project
+dependencies - list of packages used in project
+scripts - scripts to be run in project
+main - main file of project
+
+npm init to initialize package.json
+npm i (package_name) to install package
+npm uninstall (package_name) to uninstall package
+1. after installing package it will be in node_modules and
+dependencies will be in package.json with version of package
+2. if we give this to other person just run npm i
+
+package-lock.json (can delete this file)
+keeps the details of exact version of packages used in project
+
+node_modules is a directory where all packages are stored
+it is not a good practice to push this to repository
+therefore it is add in gitignore
+if this folder gets deleted then we can install packages again using npm i
+details of these packages are in package.json
+
+
+
+Nodemon
+It saves and runs automatically, saves time runs continuously
+install nodemon using npm i nodemon
+npm i nodemon -g to install globally
+
+
+
+Nodejs is async, single threaded language
+
+
+
