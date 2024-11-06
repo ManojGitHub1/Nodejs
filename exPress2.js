@@ -32,7 +32,7 @@ app.get('/profile',(_, res) => {
         email:'test@gmail.com',
         country:'USA'
     }
-    res.render('profile', {user});
+    res.render(__dirname+'/views/profile.ejs', {user});
 })
 
 
