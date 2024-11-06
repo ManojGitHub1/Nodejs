@@ -121,3 +121,17 @@ So until call-stack is empty , event loop will not go to callback-queue
 FROM call-stack memory WHERE MAIN WAS RUNNING AFTER MAIN IS FULLY EXECUTED AND REMOVED FORM call-stack
 call-back-Queue CODE WILL BE SENT TO call-stack
 
+
+Express js
+install express using npm i express
+.get method is used to get data from server
+
+
+EJS Template package (Embedded JavaScript Template)
+Template Engine
+folder named views required
+1. app.set('view engine', 'ejs')
+2. render
+
+
+
