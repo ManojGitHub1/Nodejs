@@ -43,23 +43,23 @@
 
 // Package.json
 // colors package
-var colors = require('colors');
-console.log("hello".red);
+// var colors = require('colors');
+// console.log("hello".red);
 
 // Node-mon
 // console.log("This Nodemon is Wonderfull!")
 
 
 
+// Create static Data API
 // data.js
 // const http = require('http');
-// const data = require('./data')
+// const data = require('./Data/data')
 // http.createServer((req, res)=>{
 // res.writeHead(200,{'Content-Type':'application\json'});
 // res.write(JSON.stringify(data));
 // res.end();
-// }).listen(5000);
-// console.log(data)
+// }).listen(5000);r
 
 
 
@@ -68,8 +68,6 @@ console.log("hello".red);
 // console.log(process)
 // node ./index.js hello , so hello is argv[2] now
 // console.log(process.argv[2])
-
-
 
 
 // input in console
@@ -88,6 +86,7 @@ console.log("hello".red);
 // node ./index.js add orange.txt "This is color & fruit"                         
 // node ./index.js remove add   
 
+
 // const fs = require('fs')
 // const path = require('path')
 // const dirPath = path.join(__dirname, 'files');
@@ -96,6 +95,7 @@ console.log("hello".red);
 //     fs.writeFileSync(dirPath+`/hello${i}.txt`, `This is ${i}th file.`)
 // }
 
+// reading files from directory
 // fs.readdir(dirPath, (error, files)=>{
 //     // console.warn(files); // gives array
 //     files.forEach((items)=>{
@@ -103,17 +103,21 @@ console.log("hello".red);
 //     })
 // })
 
+
 // const dirPathold = path.join(__dirname, 'apple.txt');
 // console.log(dirPathold)
 // console.log(dirPath)
 
-// var oldPath = dirPathold
-// var newPath = dirPath
+// var oldPath = dirPathold  NODEJS/apple.txt
+// var newPath = dirPath     NODEJS/files
 
+// moving apple.txt to files directory
 // fs.rename(oldPath, newPath, function (err) {
 //     if (err) return console.log(err); 
 //     console.log('Successfully renamed - AKA moved!')
 // })
+
+
 
 // using fs-extra package
 // const fse = require('fs-extra')

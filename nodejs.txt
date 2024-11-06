@@ -87,8 +87,37 @@ install nodemon using npm i nodemon
 npm i nodemon -g to install globally
 
 
+Getting input from command line
+PROCESS MODULE in nodejs is an object
+process.argv is an array of command line arguments
+argv(arguments vector)
+
+console.log(process)
+node ./index.js hello
+[ 'node', './index.js', 'hello' ]
+argv[0] is path of node executable 
+argv[1] is path of script
+so hello is argv[2] now
+console.log(process.argv[2])
+
+PATH MODULE in nodejs
+path module used to join current directory with given folder
+__dirPath gives current path
+path.join(__dirname, 'files')
+below creating multiple helloi.txt files
+dirPath+`/hello${i}.txt`, `This is ${i}th file.`
+
 
 Nodejs is async, single threaded language
+handled using promise or async/await
+new Promise((resolve, reject))
 
-
+Event Loop
+Call-Stack--->Node-API, Callback-Queue
+setTimeout is a func from C,C++ library which runs in Node-API as it is not Javascript code
+so both setTimeout is sent in Node-API memory from there it checks which should execute first
+as 2 setTimeout is 0 sec so it will send to callback-Queue memorey
+So until call-stack is empty , event loop will not go to callback-queue
+FROM call-stack memory WHERE MAIN WAS RUNNING AFTER MAIN IS FULLY EXECUTED AND REMOVED FORM call-stack
+call-back-Queue CODE WILL BE SENT TO call-stack
 

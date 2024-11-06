@@ -33,13 +33,8 @@
 
 
 // Call-Stack--->Node-API, Callback-Queue
+// .txt 
 console.log("start")
-
-// setTimeout is a func from C,C++ library which runs in Node-API as it is not Javascript code
-// so both setTimeout is sent in Node-API memory from there it checks which should execute first
-// as 2 setTimeout is 0 sec so it will send to callback-Queue memorey
-// FROM call-stack memory WHERE MAIN WAS RUNNING AFTER MAIN IS FULLY EXECUTED AND REMOVED FORM call-stack
-// call-back-Queue CODE WILL BE SENT TO call-stack
 
 setTimeout(()=>{
     console.log("load 2sec exe...")
