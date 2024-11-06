@@ -27,9 +27,14 @@ app.get('*',(_, res) => {
 })
 
 app.get('/profile',(_, res) => {
-    res.render('profile');
+    const user={
+        name:'Peter',
+        email:'test@gmail.com',
+        country:'USA'
+    }
+    res.render('profile', {user});
 })
 
 
 
-app.listen(5050);
+app.listen(4000);
