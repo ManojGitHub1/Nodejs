@@ -134,4 +134,13 @@ folder named views required
 2. render
 
 
+Middleware
+Application-level middleware    (Applys middleware on entire application)
+Router-level middleware         (Applys middleware on specific Router not all)
+Error-handling middleware
+Built-in middleware
+Third-party middleware
+
+
+
 
